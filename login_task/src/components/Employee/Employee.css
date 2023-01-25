@@ -1,0 +1,141 @@
+.employee_details {
+  height: 500px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.employee_content_1 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #25c481, #25b7c4);
+}
+.employee_content_1 > h1 {
+  text-align: center;
+  line-height: 100px;
+  font-family: VarelaRound-Regular;
+}
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: VarelaRound-Regular;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  font-family: VarelaRound-Regular;
+}
+
+.employee_content_1 > h1 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.employee_details_individual {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  box-shadow: 5px 5px 5px #7d704d;
+  background-color: #fff;
+  border-radius: 40px;
+  font-family: VarelaRound-Regular;
+}
+.individual_name {
+  color: #000;
+}
+.individual_department,
+.individual_content,
+.individual_name {
+  padding: 3%;
+}
+.individual_details {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #25c481, #25b7c4);
+}
+.button {
+  width: 100%;
+}
+.button_login_1 {
+  position: relative;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #000;
+  font-family: "Roboto Mono", monospace;
+  margin: 10px;
+}
+.button_login_1::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #051923;
+  border-left: 2px solid #051923;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.button_login_1::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #051923;
+  border-right: 2px solid #051923;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.button_login_1:hover::before,
+button:hover::after {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+.button_login_1:hover {
+  background: #051923;
+  color: #fff;
+  box-shadow: 0px 0px 10px #051923;
+  transition-delay: 0.5s;
+}
+@media all and (max-width: 680px) {
+  .employee_content_1 {
+    width: auto;
+  }
+}
+@media all and (max-width: 800px) {
+  .employee_details_individual {
+    width: 90%;
+    height: auto;
+  }
+  td {
+    font-size: 1rem;
+  }
+  th {
+    font-size: 1rem;
+  }
+}
